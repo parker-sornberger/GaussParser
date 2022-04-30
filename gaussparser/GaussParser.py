@@ -7,8 +7,7 @@ email:
 
 
 from types import MappingProxyType
-import pandas as pd
-import json
+
 
 class TDDFTParser:
     def __init__(self, file):
@@ -204,24 +203,7 @@ class TDDFTParser:
         return which
     
     
-    def _json_dump(self, name, which):
-        with open(F"{name}.json", "w") as out:
-            json.dump(which, out)
-    
-    def _text_dump(self, name, which):
-        pass
-    
-    def _pandas_csv_dump(self, name, which):
-        #pass which as the item not the name
-        index = list(map(lambda x : x["name"], which))
-        df = pd.DataFrame(which, index = index).drop(["name"], axis = 1)
-        df.to_csv(F"{name}.csv")
-        
-        
-        
-    
-    def to_file(self, name, fmt, which="all"):
-        self._json_dump("k", self.singlets)
+
         
         
 

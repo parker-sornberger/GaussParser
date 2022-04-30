@@ -30,6 +30,8 @@ print(F"These are the states that have a HOMO-LUMO or LUMO-HOMO transition {pars
 * Works only with Gaussian log files for omega-tuning and tested only with outputs from Gaussian 16
 * Pretty minimalist: You can get the raw omega value, and the key words for geometry optimization using this value
 
+*OmegaParser Example*
+
 ```python
 
 from gaussparser import OmegaParser

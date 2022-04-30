@@ -23,7 +23,7 @@ print(F"These are the states that have a HOMO-LUMO or LUMO-HOMO transition {pars
 ```
 **TDDFTParser To-do**
 * Make file writers (JSON, CSV, and Text)
-* Sensible attribute getter
+* Sensible attribute getter : Index based or keyword based?
 
 
 **OmegaParser**

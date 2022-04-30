@@ -1,3 +1,11 @@
+"""
+author: 
+    Parker Sornberger
+email:
+    pdso223@uky.edu
+"""
+
+
 from types import MappingProxyType
 import pandas as pd
 import json
